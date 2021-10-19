@@ -6,3 +6,6 @@
     If the player shoots all the aliens, a new fleet appears that moves fasetr than the previous fleet. 
     If any alien hits the players ship or reaches the bottom of the screen, the player loses a ship.
     If the player loses three ships, the game ends. 
+
+Step1:
+    Starts as a class called AlienInvasion.

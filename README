@@ -111,7 +111,8 @@ CHAPTER 13 - Aliens
     The behavior of each alien is controlled by a class called Alien, which
     we’ll structure like the Ship class
 
-Drawing the Alien fleet
+Drawing the Alien fleet 
+    First Row
     Determining How Many Aliens fit in a row
         1. Find out how much horizontal space we have
             To figure out how many aliens fit in a row, let’s look at how much horizontal
@@ -128,5 +129,17 @@ Drawing the Alien fleet
             for the alien and one width for the empty space to its right. To find the
             number of aliens that fit across the screen, we divide the available space by
             two times the width of an alien:
+
+    Refactoring _create_fleet()
+        redundant moving to def _create_alien(self, alien_number):
+
+    Adding Rows
+        To finish the fleet, determine the number of rows that fit on the screen
+        and then repeat the loop (for creating the aliens in one row) that number
+        of times. To determine the number of rows, we find the available vertical
+        space by subtracting the alien height from the top, the ship height from the
+        bottom, and two alien heights from the bottom of the screen:
+
+
 
 

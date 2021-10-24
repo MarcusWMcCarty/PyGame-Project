@@ -61,6 +61,8 @@ Adjusting the Ships Speed
 
 Refactoring _check_events()
     break down into two more methods: one that handles KEYDOWN events and another that handles KEYUP events
-    
+
+Pressing Q to Quit
+    Keyboard shortuct "Q" to quit game
 
         

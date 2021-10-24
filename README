@@ -154,5 +154,23 @@ Moving the Alien fleet
     Now each fleet should dissapear of the side of the screen
 
 Creating Seetings for Fleet Direction
+    Now we’ll create the settings that will make the fleet move down the screen
+    and to the left when it hits the right edge of the screen.
 
+    The setting fleet_drop_speed controls how quickly the fleet drops down
+    the screen each time an alien reaches either edge. It’s helpful to separate
+    this speed from the aliens’ horizontal speed so you can adjust the two
+    speeds independently.
 
+Checking to see wheter or not alien has hit the edge
+    We can call the new method check_edges() on any alien to see if it’s at
+    the left or right edge. The alien is at the right edge if the right attribute of
+    its rect is greater than or equal to the right attribute of the screen’s rect u.
+    It’s at the left edge if its left value is less than or equal to 0
+
+    We modify the method update() to allow motion to the left or right w
+    by multiplying the alien’s speed factor by the value of fleet_direction. If
+    fleet_direction is 1, the value of alien_speed_factor will be added to the
+    alien’s current position, moving the alien to the right; if fleet_direction
+    is −1, the value will be subtracted from the alien’s position, moving the
+    alien to the left.

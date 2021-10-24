@@ -65,4 +65,11 @@ Refactoring _check_events()
 Pressing Q to Quit
     Keyboard shortuct "Q" to quit game
 
+Adding the Bullet Settings
+    Update setting.py with new values that well need for bullet class
+
+Creating the Bullet Class
+    First we used a method to define the bullets settings and midtop attributes
+    Then we must create another method to update and draw the bullet
+
         

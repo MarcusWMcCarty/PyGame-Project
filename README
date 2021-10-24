@@ -72,4 +72,17 @@ Creating the Bullet Class
     First we used a method to define the bullets settings and midtop attributes
     Then we must create another method to update and draw the bullet
 
-        
+Storing Bullets in a Group
+    Now that we have a Bullet class and the necessary settings defined, we can
+    write code to fire a bullet each time the player presses the spacebar. First,
+    we’ll create a group in alien_invasion.py to store all the live bullets so we
+    can manage the bullets that have already been fired. This group will be an
+    instance of the class pygame.sprite.Group, which behaves like a list with some
+    extra functionality that’s helpful when building games. We’ll use this group
+    to draw bullets to the screen on each pass through the main loop and to
+    update each bullet’s position:
+
+Firing Bullets
+    Import Bullet from Bullet
+    elif event key for spacebar
+    def _fire_bullet(self) to fire bullets

@@ -110,3 +110,23 @@ CHAPTER 13 - Aliens
     Placing one alien on the screen is like placing a ship on the screen.
     The behavior of each alien is controlled by a class called Alien, which
     we’ll structure like the Ship class
+
+Drawing the Alien fleet
+    Determining How Many Aliens fit in a row
+        1. Find out how much horizontal space we have
+            To figure out how many aliens fit in a row, let’s look at how much horizontal
+            space we have. The screen width is stored in ai_settings.screen_width, but we
+            need an empty margin on either side of the screen. We’ll make this margin
+            the width of one alien. Because we have two margins, the available space for
+            aliens is the screen width minus two alien widths:
+                available_space_x = ai_settings.screen_width – (2 * alien_width)
+
+        2. Spacing Between Aliens
+            number_aliens_x = available_space_x / (2 * alien_width)
+
+            The space needed to display one alien is twice its width: one width
+            for the alien and one width for the empty space to its right. To find the
+            number of aliens that fit across the screen, we divide the available space by
+            two times the width of an alien:
+
+

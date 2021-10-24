@@ -57,5 +57,8 @@ Adjusting the Ships Speed
     attribute to the Settings class. We’ll use this attribute to determine how far
     to move the ship on each pass through the loop
 
+    Then we Limit the ships speed by modyfying the supdate() method in ship.
+        
+
 
         

@@ -11,3 +11,8 @@ Starting the Game Project:
     Starts as a class called AlienInvasion.
     Sets up Display
     Sets up Surface, a surface in pygame is a part of the screen where a game element can be displayed.
+
+Setting Background Color:
+Fill the background using the fill() method, which acts as a surface and only takes one argument, a color.
+
+Creating a Settings Class

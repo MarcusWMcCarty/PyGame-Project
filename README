@@ -102,7 +102,11 @@ Limiting Bullets
     are already active, nothing happens when the spacebar is pressed. If you run
     the game now, you should be able to fire bullets only in groups of three.
 
-
-
 Creating the _update_bullets() Method
     moving the bullet managment code to a seperate method to keep file more organized.
+
+
+CHAPTER 13 - Aliens 
+    Placing one alien on the screen is like placing a ship on the screen.
+    The behavior of each alien is controlled by a class called Alien, which
+    we’ll structure like the Ship class

@@ -13,6 +13,12 @@ Starting the Game Project:
     Sets up Surface, a surface in pygame is a part of the screen where a game element can be displayed.
 
 Setting Background Color:
-Fill the background using the fill() method, which acts as a surface and only takes one argument, a color.
+    Fill the background using the fill() method, which acts as a surface and only takes one argument, a color.
 
 Creating a Settings Class
+    Created a settings class to store settings varibales in one place. this approach works better for adjusting individual settings. 
+
+Adding the Ship Imaage:
+    Load the image and use pygame blit() method to draw it. 
+    Postition the ship image into the mid bottom and called on it in the alien_invasion file to make it appear at te bottom of the screen.
+

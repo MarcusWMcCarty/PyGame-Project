@@ -140,6 +140,19 @@ Drawing the Alien fleet
         space by subtracting the alien height from the top, the ship height from the
         bottom, and two alien heights from the bottom of the screen:
 
+Moving the Alien fleet
+    Now let’s make our fleet of aliens move to the right across the screen until
+    it hits the edge, and then make it drop a set amount and move in the other
+    direction. We’ll continue this movement until all aliens have been shot
+    down, one collides with the ship, or one reaches the bottom of the screen.
+    Let’s begin by making the fleet move to the right.
 
+    To move the aliens, we’ll use an update() method in alien.py, which we’ll
+    call for each alien in the group of aliens. First, add a setting to control the
+    speed of each alien:
+
+    Now each fleet should dissapear of the side of the screen
+
+Creating Seetings for Fleet Direction
 
 

@@ -28,4 +28,28 @@ Refactoring the _check_events() and _update_screen() methods
         called check_events(). This will simplify run_game() and isolate the event management loop. 
         Isolating the event loop allows you to manage events separately from other aspects of the game, like updating the screen.
 
+Piltoing the Ship
+    give the player the ability to move the ship right and left. To do this,
+    we’ll write code that responds when the player presses the right or left
+    arrow key
     
+Moving the Ship
+    First we set up a KEYDOWN event that makes the ship move everytime a player presses the right arrow key one spacebar
+    Then we must allow for continuous movement.
+        When the player holds down the right arrow key, we want the ship to
+        continue moving right until the player releases the key. We’ll have our
+        game detect a pygame.KEYUP event so we’ll know when the right arrow key is
+        released; then we’ll use the KEYDOWN and KEYUP events together with a flag
+        called moving_right to implement continuous motion.
+
+        When the ship is motionless, the moving_right flag will be False. When the
+        right arrow key is pressed, we’ll set the flag to True, and when it’s released,
+        we’ll set the flag to False again.
+
+        The Ship class controls all attributes of the ship, so we’ll give it an attribute called moving_right and an update() method to check the status of the
+        moving_right flag. The update() method will change the position of the ship if
+        the flag is set to True. We’ll call this method any time we want to update the
+        position of the ship
+
+
+        

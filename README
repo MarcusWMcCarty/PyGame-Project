@@ -86,3 +86,19 @@ Firing Bullets
     Import Bullet from Bullet
     elif event key for spacebar
     def _fire_bullet(self) to fire bullets
+
+Deleting Old Bullets
+    Bullets currently dont actually disappear when they clear the top screen which makes them consume memory and processing poiwer.
+    We need to get rid of these old bullets, or the game will slow down from
+    doing so much unnecessary work. To do this, we need to detect when the
+    bottom value of a bullet’s rect has a value of 0, which indicates the bullet has
+    passed off the top of the screen:
+
+Limiting Bullets    
+    if len(self.bullets) < self.settings.bullets_allowed:
+
+    When the spacebar is pressed, we check the length of bullets. If
+    len(bullets) is less than three, we create a new bullet. But if three bullets
+    are already active, nothing happens when the spacebar is pressed. If you run
+    the game now, you should be able to fire bullets only in groups of three.
+

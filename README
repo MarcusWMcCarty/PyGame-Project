@@ -174,3 +174,19 @@ Checking to see wheter or not alien has hit the edge
     alien’s current position, moving the alien to the right; if fleet_direction
     is −1, the value will be subtracted from the alien’s position, moving the
     alien to the left.
+
+Shooting Down the Aliens   
+    Detect Bullet Collisions
+        The sprite.groupcollide() method compares each bullet’s rect with each
+        alien’s rect and returns a dictionary containing the bullets and aliens that
+        have collided. Each key in the dictionary is a bullet, and the corresponding
+        value is the alien that was hit. (We’ll use this dictionary when we implement
+        a scoring system in Chapter 14.)
+
+        collisions = pygame.sprite.groupcollide(self.bullets, self.aliens, True, True)
+
+    Making Bullets Larger for testing
+     Not needed
+
+    Repopulating the Fleet
+        

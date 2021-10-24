@@ -7,5 +7,7 @@
     If any alien hits the players ship or reaches the bottom of the screen, the player loses a ship.
     If the player loses three ships, the game ends. 
 
-Step1:
+Starting the Game Project:
     Starts as a class called AlienInvasion.
+    Sets up Display
+    Sets up Surface, a surface in pygame is a part of the screen where a game element can be displayed.

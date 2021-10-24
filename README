@@ -58,7 +58,9 @@ Adjusting the Ships Speed
     to move the ship on each pass through the loop
 
     Then we Limit the ships speed by modyfying the supdate() method in ship.
-        
 
+Refactoring _check_events()
+    break down into two more methods: one that handles KEYDOWN events and another that handles KEYUP events
+    
 
         

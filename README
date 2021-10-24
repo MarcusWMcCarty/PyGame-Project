@@ -22,3 +22,10 @@ Adding the Ship Imaage:
     Load the image and use pygame blit() method to draw it. 
     Postition the ship image into the mid bottom and called on it in the alien_invasion file to make it appear at te bottom of the screen.
 
+Refactoring the _check_events() and _update_screen() methods
+    The _check_events() Method 
+        We’ll start by moving the code that manages events to a separate function
+        called check_events(). This will simplify run_game() and isolate the event management loop. 
+        Isolating the event loop allows you to manage events separately from other aspects of the game, like updating the screen.
+
+    

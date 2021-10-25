@@ -62,6 +62,27 @@ class AlienInvasion:
                 self._check_keydown_events(event)
             elif event.type == pygame.KEYUP:
                 self._check_keyup_events(event)
+            elif event.type == pygame.MOUSEBUTTONDOWN:
+                mouse_pos = pygame.mouse.get_pos()
+                self._check_play_button(mouse_pos)
+
+    def _check_play_button(self, mouse_pos):
+        """Start a new game when the play clicks Play"""
+        if self.play_button.rect.collidepoint(mouse_pos):
+            #Reset the game stats
+            self.stats.reset_stats()
+            self.stats.game_active = True
+
+            #Get rid of remaining aliens and bullets
+            self.aliens.empty()
+            self.bullets.empty()
+
+            #Create a new fleet and center the ship
+            self._create_fleet()
+            self.ship.center_ship()
+
+
+
 
     def _check_keydown_events(self, event):
         """Respond to keypresses""" 
@@ -197,9 +218,6 @@ class AlienInvasion:
             #Destory exisiting bullets and create a new fleet
             self.bullets.empty()
             self._create_fleet()
-
-
-
 
 
     def _update_screen(self):

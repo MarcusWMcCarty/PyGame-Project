@@ -263,6 +263,14 @@ Deactivating the Play Button
     #Hide The Mouse Cursor.
             pygame.mouse.set_visible(False)
 
+Staging the Settings
+    Updated seetings class and seperated static and dynamic varibales to make the game speed up accoridingly.
+
+Displaying The Score
+    1. Create a new class called scoreboard.
+    2. Call the scoreboard to the main program
+    3. Draw the scorebaord right before the play button
+    4.
 
 
 

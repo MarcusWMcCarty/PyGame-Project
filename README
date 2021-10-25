@@ -216,4 +216,19 @@ Ending the Game
     Before we write code to do all this, we need to know that our approach for
     detecting alien-ship collisions works correctly. Writing a print statement is a
     simple way to ensure we’re detecting collisions properly.)
-        
+    
+    GameStats Class
+        Used to track stats
+        change ship limit to 3 
+
+        We import the new GameStats class u, make a stats instance v, and then
+        add the stats, screen, and ship arguments in the call to update_aliens() w.
+        We’ll use these arguments to track the number of ships the player has left
+        and to build a new fleet when an alien hits the ship.
+
+        When an alien hits the ship, we subtract one from the number of ships
+        left, destroy all existing aliens and bullets, create a new fleet, and reposition the ship in the middle of the screen. (We’ll also pause the game for
+        a moment so the player can notice the collision and regroup before a new
+        fleet appears.)
+
+

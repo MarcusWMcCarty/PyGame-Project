@@ -243,5 +243,20 @@ Chapter 14 - Scoring
       self.game_active = False
 
 Creating a Button Class
-    
+    Creates an inactive button in the middle of the screen using pygame
+
+Starting the game with the button
+    elif event.type == pygame.MOUSEBUTTONDOWN:
+        mouse_pos = pygame.mouse.get_pos()
+        self._check_play_button(mouse_pos)
+
+    def _check_play_button(self, mouse_pos):
+        """Start a new game when the play clicks Play"""
+        if self.play_button.rect.collidepoint(mouse_pos):
+            self.stats.game_active = True
+
+Resetting the Game
+
+
+
 

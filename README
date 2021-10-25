@@ -290,7 +290,22 @@ High Score
 - Update high score in scorebaord to put highscore at the top of the screen
 
 Displaying the Level
-    
+    -self.prep_level()
+    - def prep_level(self):
+        """Turn the level into a rendered image"""
+        level_str = str(self.stats.level)
+        self.level_image = self.font.render(level_str, True, self.text_color, self.settings.bg_color)
+
+        #Position the level below score
+        self.level_rect = self.level_image.get_rect()
+        self.level_rect.right = self.score_rect.right
+        self.level_rect.top = self.score_rect.bottom + 10
+
+Displaying the Number of Ships
+    First, we need to make Ship inherit from Sprite so we can create a group
+    of ships:
+        
+
 
 
 

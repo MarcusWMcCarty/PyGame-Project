@@ -232,3 +232,16 @@ Ending the Game
         fleet appears.)
 
 
+Chapter 14 - Scoring
+
+-Adding The Play Button
+    In this section we’ll add a Play button that appears before a game begins
+    and reappears when the game ends so the player can play again.
+    Right now the game begins as soon as you run alien_invasion.py. Let’s
+    start the game in an inactive state and then prompt the player to click a Play
+    button to begin. 
+      self.game_active = False
+
+Creating a Button Class
+    
+

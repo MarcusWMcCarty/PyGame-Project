@@ -256,6 +256,12 @@ Starting the game with the button
             self.stats.game_active = True
 
 Resetting the Game
+    reset the game under the _check_play_button
+
+Deactivating the Play Button
+
+    #Hide The Mouse Cursor.
+            pygame.mouse.set_visible(False)
 
 
 

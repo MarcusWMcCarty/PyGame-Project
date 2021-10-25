@@ -286,6 +286,12 @@ Updating the Score as Aliens are Shot Down
             self.stats.score += self.settings.alien_points
             self.sb.prep_score()
 
+High Score
+- Update high score in scorebaord to put highscore at the top of the screen
+
+Displaying the Level
+    
+
 
 
 

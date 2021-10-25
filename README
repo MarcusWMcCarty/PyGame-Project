@@ -270,7 +270,23 @@ Displaying The Score
     1. Create a new class called scoreboard.
     2. Call the scoreboard to the main program
     3. Draw the scorebaord right before the play button
-    4.
+
+Updating the Score as Aliens are Shot Down
+    To write a live score to the screen, we update the value of stats.score whenever an alien is hit, and then call prep_score() to update the score image. 
+    settings.py
+        self.alien_points = 50
+
+    We’ll increase the point value of each alien as the game progresses. To
+    make sure this point value is reset each time a new game starts, we set the
+    value in initialize_dynamic_settings().
+    Update the score each time an alien is shot down in check_bullet_alien_
+    collisions():
+    
+    if collisions:
+            self.stats.score += self.settings.alien_points
+            self.sb.prep_score()
+
+
 
 
 
